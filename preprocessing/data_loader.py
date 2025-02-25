@@ -4,7 +4,7 @@ import numpy as np
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Path to the librispeech dataset
-DATASET_PATH = 'C:/Users/kayky/PycharmProjects/SpeechRecognitionApp-PY/data'
+DATASET_PATH = 'data'
 
 
 # A function to load and preprocess the audio (extracting the mfccs) and corresponding the transcripts
