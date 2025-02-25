@@ -5,7 +5,7 @@ import argparse
 from tensorflow.keras.models import load_model
 
 
-def quantize_model(model_path="C:/Users/kayky/PycharmProjects/SpeechRecognitionApp-PY/speech_recognition_model_h5",
+def quantize_model(model_path="speech_recognition_model_h5",
                    save_path=None):
 
     # Check if model exists
@@ -72,7 +72,7 @@ def quantize_model(model_path="C:/Users/kayky/PycharmProjects/SpeechRecognitionA
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Quantize a TensorFlow model')
     parser.add_argument('--model_path', type=str,
-                        default="C:/Users/kayky/PycharmProjects/SpeechRecognitionApp-PY/speech_recognition_model_h5",
+                        default="speech_recognition_model_h5",
                         help='Path to the saved model file (.h5)')
     parser.add_argument('--save_path', type=str,
                         help='Path to save the quantized model file (.tflite)')
