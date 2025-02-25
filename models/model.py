@@ -11,5 +11,5 @@ def build_model(input_shape):
     model.add(Dense(128, activation='relu'))
     model.add(Dense(64, activation='relu'))
     model.add(Dense(1, activation='linear'))
-    model.compile(optimizer='adam', loss='mean_squared_error')  # output layer for regression
+    model.compile(optimizer='adam', loss='mean_squared_error')  # output layer for regression 
     return model
