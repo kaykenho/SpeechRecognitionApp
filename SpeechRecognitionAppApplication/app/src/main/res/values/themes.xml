@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.VoiceFlow" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.VoiceFlow.SplashScreen" parent="Theme.VoiceFlow">
+        <item name="android:windowBackground">@color/splash_background</item>
+        <item name="android:statusBarColor">@color/splash_background</item>
+    </style>
+</resources>
