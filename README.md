@@ -1,5 +1,162 @@
 # Speech Recognition Project
 
+![svgviewer-output](https://github.com/user-attachments/assets/66de968e-de82-41b0-9394-fa53250ab9ab)
+
+
+![Upl<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <!-- Background -->
+  <rect width="900" height="700" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="450" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Speech Recognition Project Architecture</text>
+  
+  <!-- Main Sections -->
+  <rect x="50" y="70" width="800" height="300" fill="#e6f3ff" stroke="#0066cc" stroke-width="2" rx="10" ry="10"/>
+  <text x="450" y="95" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">ML Component (Python)</text>
+  
+  <rect x="50" y="390" width="800" height="280" fill="#e6ffe6" stroke="#009933" stroke-width="2" rx="10" ry="10"/>
+  <text x="450" y="415" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Android Application (Kotlin)</text>
+  
+  <!-- ML Component Details -->
+  <!-- Data Flow Box -->
+  <rect x="70" y="120" width="200" height="220" fill="#d1e7ff" stroke="#0066cc" stroke-width="1" rx="5" ry="5"/>
+  <text x="170" y="140" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Data Processing</text>
+  
+  <!-- Model Box -->
+  <rect x="290" y="120" width="200" height="220" fill="#d1e7ff" stroke="#0066cc" stroke-width="1" rx="5" ry="5"/>
+  <text x="390" y="140" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Model Training</text>
+  
+  <!-- Optimization Box -->
+  <rect x="510" y="120" width="200" height="220" fill="#d1e7ff" stroke="#0066cc" stroke-width="1" rx="5" ry="5"/>
+  <text x="610" y="140" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Optimization</text>
+  
+  <!-- ML Details -->
+  <!-- Data Processing Details -->
+  <rect x="85" y="155" width="170" height="30" fill="#ffffff" stroke="#0066cc" stroke-width="1" rx="3" ry="3"/>
+  <text x="170" y="175" font-family="Arial" font-size="12" text-anchor="middle">preprocessing/data_loader.py</text>
+  
+  <rect x="85" y="195" width="170" height="30" fill="#ffffff" stroke="#0066cc" stroke-width="1" rx="3" ry="3"/>
+  <text x="170" y="215" font-family="Arial" font-size="12" text-anchor="middle">Audio Feature Extraction</text>
+  
+  <rect x="85" y="235" width="170" height="30" fill="#ffffff" stroke="#0066cc" stroke-width="1" rx="3" ry="3"/>
+  <text x="170" y="255" font-family="Arial" font-size="12" text-anchor="middle">Data Augmentation</text>
+  
+  <rect x="85" y="275" width="170" height="30" fill="#ffffff" stroke="#0066cc" stroke-width="1" rx="3" ry="3"/>
+  <text x="170" y="295" font-family="Arial" font-size="12" text-anchor="middle">Batching &amp; Preparation</text>
+  
+  <!-- Model Training Details -->
+  <rect x="305" y="155" width="170" height="30" fill="#ffffff" stroke="#0066cc" stroke-width="1" rx="3" ry="3"/>
+  <text x="390" y="175" font-family="Arial" font-size="12" text-anchor="middle">models/model.py</text>
+  
+  <rect x="305" y="195" width="170" height="30" fill="#ffffff" stroke="#0066cc" stroke-width="1" rx="3" ry="3"/>
+  <text x="390" y="215" font-family="Arial" font-size="12" text-anchor="middle">Neural Network Design</text>
+  
+  <rect x="305" y="235" width="170" height="30" fill="#ffffff" stroke="#0066cc" stroke-width="1" rx="3" ry="3"/>
+  <text x="390" y="255" font-family="Arial" font-size="12" text-anchor="middle">train.py</text>
+  
+  <rect x="305" y="275" width="170" height="30" fill="#ffffff" stroke="#0066cc" stroke-width="1" rx="3" ry="3"/>
+  <text x="390" y="295" font-family="Arial" font-size="12" text-anchor="middle">inference.py</text>
+  
+  <!-- Optimization Details -->
+  <rect x="525" y="155" width="170" height="30" fill="#ffffff" stroke="#0066cc" stroke-width="1" rx="3" ry="3"/>
+  <text x="610" y="175" font-family="Arial" font-size="12" text-anchor="middle">quantization/quantize_model.py</text>
+  
+  <rect x="525" y="195" width="170" height="30" fill="#ffffff" stroke="#0066cc" stroke-width="1" rx="3" ry="3"/>
+  <text x="610" y="215" font-family="Arial" font-size="12" text-anchor="middle">Model Compression</text>
+  
+  <rect x="525" y="235" width="170" height="60" fill="#ffcc99" stroke="#ff6600" stroke-width="1" rx="3" ry="3"/>
+  <text x="610" y="255" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">TFLite Model</text>
+  <text x="610" y="275" font-family="Arial" font-size="10" text-anchor="middle">speech_recognition_model_h5</text>
+  <text x="610" y="287" font-family="Arial" font-size="10" text-anchor="middle">_quantized.tflite</text>
+  
+  <!-- Android Component Details -->
+  <!-- UI Box -->
+  <rect x="70" y="440" width="200" height="200" fill="#d1ffd1" stroke="#009933" stroke-width="1" rx="5" ry="5"/>
+  <text x="170" y="460" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">UI Layer</text>
+  
+  <!-- Business Logic Box -->
+  <rect x="290" y="440" width="200" height="200" fill="#d1ffd1" stroke="#009933" stroke-width="1" rx="5" ry="5"/>
+  <text x="390" y="460" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Business Logic</text>
+  
+  <!-- Data Layer Box -->
+  <rect x="510" y="440" width="320" height="200" fill="#d1ffd1" stroke="#009933" stroke-width="1" rx="5" ry="5"/>
+  <text x="670" y="460" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Data Layer</text>
+  
+  <!-- Android Details -->
+  <!-- UI Details -->
+  <rect x="85" y="475" width="170" height="30" fill="#ffffff" stroke="#009933" stroke-width="1" rx="3" ry="3"/>
+  <text x="170" y="495" font-family="Arial" font-size="12" text-anchor="middle">HomeScreen.kt</text>
+  
+  <rect x="85" y="515" width="170" height="30" fill="#ffffff" stroke="#009933" stroke-width="1" rx="3" ry="3"/>
+  <text x="170" y="535" font-family="Arial" font-size="12" text-anchor="middle">HistoryScreen.kt</text>
+  
+  <rect x="85" y="555" width="170" height="30" fill="#ffffff" stroke="#009933" stroke-width="1" rx="3" ry="3"/>
+  <text x="170" y="575" font-family="Arial" font-size="12" text-anchor="middle">SettingsScreen.kt</text>
+  
+  <rect x="85" y="595" width="170" height="30" fill="#ffffff" stroke="#009933" stroke-width="1" rx="3" ry="3"/>
+  <text x="170" y="615" font-family="Arial" font-size="12" text-anchor="middle">AudioVisualizer.kt</text>
+  
+  <!-- Business Logic Details -->
+  <rect x="305" y="475" width="170" height="30" fill="#ffffff" stroke="#009933" stroke-width="1" rx="3" ry="3"/>
+  <text x="390" y="495" font-family="Arial" font-size="12" text-anchor="middle">RecordingViewModel.kt</text>
+  
+  <rect x="305" y="515" width="170" height="30" fill="#ffffff" stroke="#009933" stroke-width="1" rx="3" ry="3"/>
+  <text x="390" y="535" font-family="Arial" font-size="12" text-anchor="middle">HistoryViewModel.kt</text>
+  
+  <rect x="305" y="555" width="170" height="30" fill="#ffffff" stroke="#009933" stroke-width="1" rx="3" ry="3"/>
+  <text x="390" y="575" font-family="Arial" font-size="12" text-anchor="middle">SettingsViewModel.kt</text>
+  
+  <rect x="305" y="595" width="170" height="30" fill="#ffffff" stroke="#009933" stroke-width="1" rx="3" ry="3"/>
+  <text x="390" y="615" font-family="Arial" font-size="12" text-anchor="middle">Dependency Injection</text>
+  
+  <!-- Data Layer Details -->
+  <rect x="525" y="475" width="140" height="85" fill="#ffffff" stroke="#009933" stroke-width="1" rx="3" ry="3"/>
+  <text x="595" y="492" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Local Storage</text>
+  <text x="595" y="510" font-family="Arial" font-size="10" text-anchor="middle">AppDatabase.kt</text>
+  <text x="595" y="525" font-family="Arial" font-size="10" text-anchor="middle">TranscriptDao.kt</text>
+  <text x="595" y="540" font-family="Arial" font-size="10" text-anchor="middle">TranscriptEntity.kt</text>
+  <text x="595" y="555" font-family="Arial" font-size="10" text-anchor="middle">Repositories</text>
+  
+  <rect x="675" y="475" width="140" height="85" fill="#ffffff" stroke="#009933" stroke-width="1" rx="3" ry="3"/>
+  <text x="745" y="492" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">ML Integration</text>
+  <text x="745" y="510" font-family="Arial" font-size="10" text-anchor="middle">AudioProcessor.kt</text>
+  <text x="745" y="525" font-family="Arial" font-size="10" text-anchor="middle">SpeechRecognizer.kt</text>
+  <text x="745" y="540" font-family="Arial" font-size="10" text-anchor="middle">TFLiteManager.kt</text>
+  
+  <rect x="525" y="570" width="290" height="60" fill="#ffcc99" stroke="#ff6600" stroke-width="1" rx="3" ry="3"/>
+  <text x="670" y="590" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">TFLite Model (assets)</text>
+  <text x="670" y="610" font-family="Arial" font-size="10" text-anchor="middle">speech_recognition_model_h5_quantized.tflite</text>
+  
+  <!-- Connection Arrows -->
+  <!-- ML Flow -->
+  <line x1="170" y1="340" x2="390" y2="340" stroke="#0066cc" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <line x1="390" y1="340" x2="610" y2="340" stroke="#0066cc" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  
+  <!-- Model to Android -->
+  <line x1="610" y1="340" x2="730" y2="340" stroke="#0066cc" stroke-width="2"/>
+  <line x1="730" y1="340" x2="730" y2="390" stroke="#663399" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowPurple)"/>
+  <text x="745" y="375" font-family="Arial" font-size="12" fill="#663399">Model Transfer</text>
+  
+  <!-- Android Flow -->
+  <line x1="170" y1="640" x2="390" y2="640" stroke="#009933" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <line x1="390" y1="640" x2="670" y2="640" stroke="#009933" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Arrow Definitions -->
+  <defs>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0066cc"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#009933"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#663399"/>
+    </marker>
+  </defs>
+</svg>oading svgviewer-output.svg…]()
+
+
 ## Overview
 This project implements a speech recognition system with a machine learning backend and an Android frontend application. The system is designed to process audio input, extract features, and convert speech to text using a trained neural network model that has been optimized for mobile deployment.
 
