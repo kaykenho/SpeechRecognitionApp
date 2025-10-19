@@ -11,6 +11,7 @@
   <!-- Title -->
   <text x="450" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Speech Recognition Project Architecture</text>
 
+```
   SpeechRecognitionApp/
 │
 ├── README.md
@@ -93,7 +94,7 @@
     ├── architecture.md
     ├── ml_pipeline.md
     └── android_setup.md
-  
+  ```
   <!-- Main Sections -->
   <rect x="50" y="70" width="800" height="300" fill="#e6f3ff" stroke="#0066cc" stroke-width="2" rx="10" ry="10"/>
   <text x="450" y="95" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">ML Component (Python)</text>
