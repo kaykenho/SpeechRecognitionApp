@@ -10,6 +10,89 @@
   
   <!-- Title -->
   <text x="450" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Speech Recognition Project Architecture</text>
+
+  SpeechRecognitionApp/
+│
+├── README.md
+├── .gitignore
+│
+├── ML/                                    # Machine Learning Component (Python)
+│   ├── preprocessing/
+│   │   └── data_loader.py               # Audio data loading and preprocessing
+│   │
+│   ├── models/
+│   │   └── model.py                     # Neural network architecture definition
+│   │
+│   ├── quantization/
+│   │   └── quantize_model.py            # Model optimization and quantization
+│   │
+│   ├── train.py                         # Model training script
+│   ├── inference.py                     # Model inference/prediction script
+│   │
+│   └── speech_recognition_model_h5_quantized.tflite  # Optimized TFLite model
+│
+├── android/                              # Android Application (Kotlin)
+│   ├── app/
+│   │   ├── src/
+│   │   │   ├── main/
+│   │   │   │   ├── java/com/yourpackage/
+│   │   │   │   │   │
+│   │   │   │   │   ├── ui/             # UI Layer
+│   │   │   │   │   │   ├── home/
+│   │   │   │   │   │   │   └── HomeScreen.kt
+│   │   │   │   │   │   ├── history/
+│   │   │   │   │   │   │   └── HistoryScreen.kt
+│   │   │   │   │   │   ├── settings/
+│   │   │   │   │   │   │   └── SettingsScreen.kt
+│   │   │   │   │   │   └── components/
+│   │   │   │   │   │       └── AudioVisualizer.kt
+│   │   │   │   │   │
+│   │   │   │   │   ├── viewmodel/     # Business Logic Layer
+│   │   │   │   │   │   ├── RecordingViewModel.kt
+│   │   │   │   │   │   ├── HistoryViewModel.kt
+│   │   │   │   │   │   └── SettingsViewModel.kt
+│   │   │   │   │   │
+│   │   │   │   │   ├── data/          # Data Layer
+│   │   │   │   │   │   ├── local/
+│   │   │   │   │   │   │   ├── database/
+│   │   │   │   │   │   │   │   ├── AppDatabase.kt
+│   │   │   │   │   │   │   │   ├── TranscriptDao.kt
+│   │   │   │   │   │   │   │   └── TranscriptEntity.kt
+│   │   │   │   │   │   │   └── repository/
+│   │   │   │   │   │   │       └── TranscriptRepository.kt
+│   │   │   │   │   │   │
+│   │   │   │   │   │   └── ml/       # ML Integration
+│   │   │   │   │   │       ├── AudioProcessor.kt
+│   │   │   │   │   │       ├── SpeechRecognizer.kt
+│   │   │   │   │   │       └── TFLiteManager.kt
+│   │   │   │   │   │
+│   │   │   │   │   └── di/           # Dependency Injection
+│   │   │   │   │       └── AppModule.kt
+│   │   │   │   │
+│   │   │   │   ├── assets/
+│   │   │   │   │   └── speech_recognition_model_h5_quantized.tflite
+│   │   │   │   │
+│   │   │   │   ├── res/
+│   │   │   │   │   ├── layout/
+│   │   │   │   │   ├── values/
+│   │   │   │   │   └── drawable/
+│   │   │   │   │
+│   │   │   │   └── AndroidManifest.xml
+│   │   │   │
+│   │   │   └── test/
+│   │   │
+│   │   ├── build.gradle
+│   │   └── proguard-rules.pro
+│   │
+│   ├── gradle/
+│   ├── build.gradle
+│   ├── settings.gradle
+│   └── gradle.properties
+│
+└── docs/
+    ├── architecture.md
+    ├── ml_pipeline.md
+    └── android_setup.md
   
   <!-- Main Sections -->
   <rect x="50" y="70" width="800" height="300" fill="#e6f3ff" stroke="#0066cc" stroke-width="2" rx="10" ry="10"/>
